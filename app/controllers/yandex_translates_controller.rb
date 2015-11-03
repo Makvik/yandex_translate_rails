@@ -1,11 +1,14 @@
 class YandexTranslatesController < ApplicationController
-  def new    
+  def new
     yandex = YandexTranslate::Client.new(Key)
     @yandex_langs = yandex.get_langs
+    @yandex_langs['dir'].each |key, value|
+      value = "en"
+    end
   end
 
-  def create    
-    yandex = YandexTranslate::Client.new(Key)   
+  def create
+    yandex = YandexTranslate::Client.new(Key)
     render plain: yandex.translate(params.require(:yandex_translates)['text'], params.require(:lang))['text']
   end
 

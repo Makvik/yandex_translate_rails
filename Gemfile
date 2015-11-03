@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 
 #Yandex
-  gem 'yandex_translate', '~> 0.0.4'
+gem 'yandex_translate', '~> 0.1.0'
+
+#Slim
+gem 'slim'
 
 
 
