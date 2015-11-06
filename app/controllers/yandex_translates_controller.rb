@@ -1,15 +1,37 @@
 class YandexTranslatesController < ApplicationController
+  def index
+    @translates = Translate.all
+  end
+
+  def show
+    @translate = Translate.find(params[:id])
+  end
+
   def new
     yandex = YandexTranslate::Client.new(Key)
-    @yandex_langs = yandex.get_langs
-    @yandex_langs['dir'].each |key, value|
-      value = "en"
+    #exapmle "en-ru" to "English - Russian"
+    @yandex_langs = yandex.get_langs['dirs'].map do |value|
+      split_value = value.split('-')
+      value = Array.[](yandex.get_langs['langs'][split_value[0]] + " - " + yandex.get_langs['langs'][split_value[1]], value)
     end
+    @translate = Translate.new
   end
 
   def create
     yandex = YandexTranslate::Client.new(Key)
-    render plain: yandex.translate(params.require(:yandex_translates)['text'], params.require(:lang))['text']
+    @translate = Translate.new do |t|
+      t.text = params.require(:yandex_translates)['text']
+      t.translated_text = yandex.translate(params.require(:yandex_translates)['text'], params.require(:yandex_translates)['lang']).first
+      t.lang_short = params.require(:yandex_translates)['lang']
+      split_lang = params.require(:yandex_translates)['lang'].split('-')
+      t.lang_long = yandex.get_langs['langs'][split_lang[0]] + " - " + yandex.get_langs['langs'][split_lang[1]]
+    end
+
+    if @translate.save
+      redirect_to :action => "show", :id => @translate
+    else
+      render 'new'
+    end
   end
 
   private

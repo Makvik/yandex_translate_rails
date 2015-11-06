@@ -1,13 +1,20 @@
 h1 Yandex Translate
+- if @translate.errors.any?
+  div id="error_explanation">
+    h2
+      = pluralize(@translate.errors.count, "error")
+      / prohibited this article from being saved:
+    ul @translate.errors.full_messages.each do |msg| %>
+      li = msg
+    end
+end
+
 = form_for :yandex_translates, url: yandex_translates_path do |f|
   p
     = f.label :Translation_direction
     br
-    select name="lang"
-      - @yandex_langs['dirs'].each do |translation_direction|
-        option.value = translation_direction = translation_direction
-      end
-
+    = f.select :lang, options_for_select(@yandex_langs)
+    =
   p
     = f.label :text
     br

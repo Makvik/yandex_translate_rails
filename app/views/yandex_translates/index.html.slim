@@ -1,0 +1,18 @@
+h1 All Translate
+
+= link_to 'New translate', new_yandex_translate_path
+br
+table
+  tr
+    th Text
+    th Translation direction
+    th Translated text
+
+  - @translates.each do |translate|
+    tr
+      td = translate.text
+      td = translate.lang_long
+      td = translate.translated_text
+      td = link_to 'Show', yandex_translate_path(translate)
+  end
+

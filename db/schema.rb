@@ -11,14 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151025200830) do
+ActiveRecord::Schema.define(version: 20151106084837) do
 
   create_table "translates", force: :cascade do |t|
     t.text     "text"
-    t.string   "translation_direction"
     t.text     "translated_text"
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
+    t.string   "lang_short"
+    t.string   "lang_long"
+    t.time     "time"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
 end

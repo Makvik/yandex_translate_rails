@@ -2,10 +2,12 @@
 
 one:
   text: MyText
-  translation_direction: MyString
   translated_text: MyText
+  lang: MyString
+  time: 2015-11-06 11:48:37
 
 two:
   text: MyText
-  translation_direction: MyString
   translated_text: MyText
+  lang: MyString
+  time: 2015-11-06 11:48:37

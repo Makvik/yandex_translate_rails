@@ -1,0 +1,17 @@
+h1 Yandex Translate
+p
+  strong Text:
+  br
+  = @translate.text
+
+p
+  strong Translation direction:
+  br
+  = @translate.lang_long
+
+p
+  strong Translated text:
+  br
+  = @translate.translated_text
+
+= link_to 'Back', yandex_translates_path
