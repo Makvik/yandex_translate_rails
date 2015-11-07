@@ -1,0 +1,44 @@
+= form_for :yandex_translates, url: url, method: method do |f|
+  p
+    = f.label :Translation_direction
+    br
+    = f.select :lang, options_for_select(@yandex_langs, :selected => @translate.lang_short)
+
+  p
+    div style="float: left;"
+      = f.label :text
+      - if @translate.errors[:text].any?
+        div class="error_explanation"
+          ul
+            - @translate.errors[:text].each do |msg|
+              li = msg
+            end
+          = f.text_area :text
+      - else
+        br
+        = f.text_area :text, :value => @translate.text
+      end
+      br
+      = f.submit 'Detect language'
+      - if @detect_lang
+        br
+        = f.label :detect_language, @detect_lang
+      end
+
+    div
+      = f.label :Translated_text
+      - if @translate.errors[:translated_text].any?
+        div class="error_explanation"
+          ul
+            - @translate.errors[:translated_text].each do |msg|
+              li = msg
+            end
+          = f.text_area :translated_text
+      - else
+        br
+        = f.text_area :translated_text, :value => @translate.translated_text
+      end
+      br
+      = f.submit :Translate
+      = f.submit :Save
+end

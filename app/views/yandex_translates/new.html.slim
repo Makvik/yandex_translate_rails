@@ -1,27 +1,3 @@
 h1 Yandex Translate
-
-= form_for :yandex_translates, url: yandex_translates_path do |f|
-  p
-    = f.label :Translation_direction
-    br
-    = f.select :lang, options_for_select(@yandex_langs)
-
-  p
-    = f.label :text
-    - if @translate.errors[:text].any?
-      div class="error_explanation"
-        ul
-          - @translate.errors[:text].each do |msg|
-            li = msg
-          end
-        = f.text_area :text
-    - else
-      br
-      = f.text_area :text
-    end
-
-  p
-    = f.submit :Translate
-end
-
+= render 'form', url: yandex_translates_path, method: :post
 = link_to 'Back', yandex_translates_path
