@@ -15,5 +15,5 @@ table
       td = translate.translated_text
       td = link_to 'Show', yandex_translate_path(translate)
       td = link_to 'Edit', edit_yandex_translate_path(translate)
+      td = link_to 'Destroy', yandex_translate_path(translate), method: :delete, data: { confirm: 'Are you sure?' }
   end
-

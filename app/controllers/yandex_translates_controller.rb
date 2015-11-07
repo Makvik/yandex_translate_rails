@@ -9,11 +9,12 @@ class YandexTranslatesController < ApplicationController
 
   def new
     @translate = Translate.new
-    render :action =>'new', :yandex_langs => Yandex_langs
+    @yandex_langs = Yandex_langs
   end
 
   def edit
     @translate = Translate.find(params[:id])
+    @yandex_langs = Yandex_langs
   end
 
   def create
@@ -28,7 +29,8 @@ class YandexTranslatesController < ApplicationController
     if @translate.save
       redirect_to :action => "show", :id => @translate
     else
-      render :action =>'new', :yandex_langs => Yandex_langs
+      @yandex_langs = Yandex_langs
+      render 'new'
     end
   end
 
@@ -44,8 +46,16 @@ class YandexTranslatesController < ApplicationController
     if @translate.save
       redirect_to :action => "show", :id => @translate
     else
+      @yandex_langs = Yandex_langs
       render 'edit'
     end
+  end
+
+  def destroy
+    @translate = Translate.find(params[:id])
+    @translate.destroy
+
+    redirect_to yandex_translates_path
   end
 
   private

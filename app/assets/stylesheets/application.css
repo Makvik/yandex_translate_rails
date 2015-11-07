@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+.error_explanation {
+  border: 2px double red;
+  display: table;
+}
