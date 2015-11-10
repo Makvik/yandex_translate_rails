@@ -3,9 +3,7 @@ class CreateTranslates < ActiveRecord::Migration
     create_table :translates do |t|
       t.text :text
       t.text :translated_text
-      t.string :lang_short
-      t.string :lang_long
-      t.time :time
+      t.string :lang
 
       t.timestamps null: false
     end
