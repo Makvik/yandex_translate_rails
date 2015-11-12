@@ -2,7 +2,7 @@
   p
     = f.label :Translation_direction
     br
-    = f.select :lang, options_for_select(Translate::YANDEX_LANGS, :selected => @translate.lang)
+    = f.select :lang, options_for_select(Translate::Yandex_langs, :selected => @translate.lang)
 
   p
     div style="float: left;"
@@ -40,5 +40,4 @@
       end
       br
       = f.submit :Translate
-      = f.submit :Save
 end
