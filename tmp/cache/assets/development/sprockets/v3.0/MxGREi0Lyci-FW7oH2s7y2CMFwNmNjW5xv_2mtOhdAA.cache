@@ -1,0 +1,18 @@
+I"í(function() {
+  Query(function() {
+    return $('#detect_language').change(function() {
+      var projects_path, projects_path_with_params, text;
+      text = $('#text').val();
+      projects_path = $('#task_project_id').data('ajax-path');
+      projects_path_with_params = projects_path + "?client_id=" + client_id;
+      if (client_id) {
+        return $.ajax(projects_path_with_params, {
+          type: 'GET',
+          dataType: 'script'
+        });
+      }
+    });
+  });
+
+}).call(this);
+:ET

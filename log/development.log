@@ -24251,3 +24251,744 @@ ActionView::Template::Error (undefined method `lang_long' for #<Translate:0x007f
   Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
   Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
   Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (35.8ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:14:03 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by YandexTranslatesController#index as HTML
+  [1m[35mTranslate Load (0.5ms)[0m  SELECT "translates".* FROM "translates"
+  Rendered yandex_translates/index.html.slim within layouts/application (37.7ms)
+Completed 500 Internal Server Error in 1451ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined method `lang_long' for #<Translate:0x007fee8797ca98>):
+    11:   - @translates.each do |translate|
+    12:     tr
+    13:       td = translate.text
+    14:       td = translate.lang_long
+    15:       td = translate.translated_text
+    16:       td = link_to 'Show', yandex_translate_path(translate)
+    17:       td = link_to 'Edit', edit_yandex_translate_path(translate)
+  app/views/yandex_translates/index.html.slim:14:in `block in _app_views_yandex_translates_index_html_slim___1489266196103907750_70331229583760'
+  app/views/yandex_translates/index.html.slim:11:in `_app_views_yandex_translates_index_html_slim___1489266196103907750_70331229583760'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (18.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (50.5ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:14:08 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[36mTranslate Load (0.1ms)[0m  [1mSELECT "translates".* FROM "translates"[0m
+  Rendered yandex_translates/index.html.slim within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `lang_long' for #<Translate:0x007fee8624e560>):
+    11:   - @translates.each do |translate|
+    12:     tr
+    13:       td = translate.text
+    14:       td = translate.lang_long
+    15:       td = translate.translated_text
+    16:       td = link_to 'Show', yandex_translate_path(translate)
+    17:       td = link_to 'Edit', edit_yandex_translate_path(translate)
+  app/views/yandex_translates/index.html.slim:14:in `block in _app_views_yandex_translates_index_html_slim___1489266196103907750_70331229583760'
+  app/views/yandex_translates/index.html.slim:11:in `_app_views_yandex_translates_index_html_slim___1489266196103907750_70331229583760'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (30.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-13 10:14:14 +0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.slim within layouts/application (3.2ms)
+Completed 200 OK in 452ms (Views: 451.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:14:16 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[35mTranslate Load (0.2ms)[0m  SELECT "translates".* FROM "translates"
+  Rendered yandex_translates/index.html.slim within layouts/application (20.5ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `lang_long' for #<Translate:0x007fee75f75010>):
+    11:   - @translates.each do |translate|
+    12:     tr
+    13:       td = translate.text
+    14:       td = translate.lang_long
+    15:       td = translate.translated_text
+    16:       td = link_to 'Show', yandex_translate_path(translate)
+    17:       td = link_to 'Edit', edit_yandex_translate_path(translate)
+  app/views/yandex_translates/index.html.slim:14:in `block in _app_views_yandex_translates_index_html_slim___1489266196103907750_70331078807400'
+  app/views/yandex_translates/index.html.slim:11:in `_app_views_yandex_translates_index_html_slim___1489266196103907750_70331078807400'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (34.3ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:14:16 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[36mTranslate Load (0.1ms)[0m  [1mSELECT "translates".* FROM "translates"[0m
+  Rendered yandex_translates/index.html.slim within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `lang_long' for #<Translate:0x007fee76660cf8>):
+    11:   - @translates.each do |translate|
+    12:     tr
+    13:       td = translate.text
+    14:       td = translate.lang_long
+    15:       td = translate.translated_text
+    16:       td = link_to 'Show', yandex_translate_path(translate)
+    17:       td = link_to 'Edit', edit_yandex_translate_path(translate)
+  app/views/yandex_translates/index.html.slim:14:in `block in _app_views_yandex_translates_index_html_slim___1489266196103907750_70331229583760'
+  app/views/yandex_translates/index.html.slim:11:in `_app_views_yandex_translates_index_html_slim___1489266196103907750_70331229583760'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (17.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (34.9ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:15:13 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[35mTranslate Load (0.2ms)[0m  SELECT "translates".* FROM "translates"
+  Rendered yandex_translates/index.html.slim within layouts/application (13.3ms)
+Completed 200 OK in 58ms (Views: 57.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/yandex_translates/new" for 127.0.0.1 at 2015-11-13 10:15:18 +0300
+Processing by YandexTranslatesController#new as HTML
+  Rendered yandex_translates/_form.html.slim (43.7ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (48.1ms)
+Completed 200 OK in 83ms (Views: 82.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:15:34 +0300
+Processing by YandexTranslatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HBA/495qhu1DpRE44iZ4TfNMXqbMUkmvherFv7GxGfiAyzMeK1FIh7GLiqYaKGauBTU4neTLyr3gVTu2xYkhgA==", "yandex_translates"=>{"lang"=>"ru-da", "text"=>"Привет", "translated_text"=>""}, "commit"=>"Translate"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  Rendered yandex_translates/_form.html.slim (25.9ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (33.1ms)
+Completed 200 OK in 1214ms (Views: 71.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:15:50 +0300
+Processing by YandexTranslatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FmtIcDu4KKEqqx/y0UObh/KGuEkfq+Y5iRKfDwwMnseKsESNzoPmy9iFhGwpTYVkBP/ecjcyZSvsrWEGeDSmvw==", "yandex_translates"=>{"lang"=>"ru-da", "text"=>"Привет", "translated_text"=>""}, "commit"=>"Translate"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "translates" ("text", "translated_text", "lang", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["text", "Привет"], ["translated_text", ""], ["lang", "ru-da"], ["created_at", "2015-11-13 07:15:52.955920"], ["updated_at", "2015-11-13 07:15:52.955920"]]
+  [1m[36m (6.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/yandex_translates/2
+Completed 302 Found in 2623ms (ActiveRecord: 8.7ms)
+
+
+Started GET "/yandex_translates/2" for 127.0.0.1 at 2015-11-13 10:15:52 +0300
+Processing by YandexTranslatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTranslate Load (0.4ms)[0m  SELECT  "translates".* FROM "translates" WHERE "translates"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered yandex_translates/show.html.slim within layouts/application (5.5ms)
+Completed 200 OK in 53ms (Views: 38.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:15:54 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[36mTranslate Load (0.2ms)[0m  [1mSELECT "translates".* FROM "translates"[0m
+  Rendered yandex_translates/index.html.slim within layouts/application (5.1ms)
+Completed 200 OK in 49ms (Views: 48.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/yandex_translates/new" for 127.0.0.1 at 2015-11-13 10:18:21 +0300
+Processing by YandexTranslatesController#new as HTML
+  Rendered yandex_translates/_form.html.slim (11.6ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (14.5ms)
+Completed 200 OK in 1510ms (Views: 58.0ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:18:31 +0300
+Processing by YandexTranslatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RMST2cN3iV54xT2SiJ4xJjAUQq6yvtv2VqF2/B+WQR/YH58kNkxHNIrrpgxwkC/Fxm0klZonWOQzHoj1a655Zw==", "yandex_translates"=>{"lang"=>"ru-el", "text"=>"Привет", "translated_text"=>""}, "commit"=>"Translate"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "translates" ("text", "translated_text", "lang", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["text", "Привет"], ["translated_text", "Γεια"], ["lang", "ru-el"], ["created_at", "2015-11-13 07:18:33.591891"], ["updated_at", "2015-11-13 07:18:33.591891"]]
+  [1m[35m (5.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/yandex_translates/3
+Completed 302 Found in 1868ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/yandex_translates/3" for 127.0.0.1 at 2015-11-13 10:18:33 +0300
+Processing by YandexTranslatesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTranslate Load (0.4ms)[0m  [1mSELECT  "translates".* FROM "translates" WHERE "translates"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered yandex_translates/show.html.slim within layouts/application (0.5ms)
+Completed 200 OK in 44ms (Views: 41.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:18:36 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[35mTranslate Load (0.2ms)[0m  SELECT "translates".* FROM "translates"
+  Rendered yandex_translates/index.html.slim within layouts/application (1.4ms)
+Completed 200 OK in 35ms (Views: 34.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/yandex_translates/new" for 127.0.0.1 at 2015-11-13 10:18:45 +0300
+Processing by YandexTranslatesController#new as HTML
+  Rendered yandex_translates/_form.html.slim (6.4ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (8.1ms)
+Completed 200 OK in 3764ms (Views: 53.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/yandex_translates/new" for 127.0.0.1 at 2015-11-13 10:18:49 +0300
+Processing by YandexTranslatesController#new as HTML
+  Rendered yandex_translates/_form.html.slim (25.9ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (26.9ms)
+Completed 200 OK in 86ms (Views: 85.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:19:03 +0300
+Processing by YandexTranslatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/+QBW+lrWXImVD7VCjpuQDTFCsA4cOtQYedkyGCx4DljPw2mHFCXGNR6pUvyNHCjwrxs+xDpaEIEWJrBFInYQQ==", "yandex_translates"=>{"lang"=>"az-ru", "text"=>"Hello", "translated_text"=>"ghb"}, "commit"=>"Translate"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `empty' for "ghb":String):
+  app/models/translate.rb:11:in `block in <class:Translate>'
+  app/controllers/yandex_translates_controller.rb:21:in `create'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (17.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (33.2ms)
+
+
+Started POST "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:19:27 +0300
+Processing by YandexTranslatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/+QBW+lrWXImVD7VCjpuQDTFCsA4cOtQYedkyGCx4DljPw2mHFCXGNR6pUvyNHCjwrxs+xDpaEIEWJrBFInYQQ==", "yandex_translates"=>{"lang"=>"az-ru", "text"=>"Hello", "translated_text"=>"ghb"}, "commit"=>"Translate"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "translates" ("text", "translated_text", "lang", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["text", "Hello"], ["translated_text", "ghb"], ["lang", "az-ru"], ["created_at", "2015-11-13 07:19:38.696829"], ["updated_at", "2015-11-13 07:19:38.696829"]]
+  [1m[36m (4.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/yandex_translates/4
+Completed 302 Found in 10926ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/yandex_translates/4" for 127.0.0.1 at 2015-11-13 10:19:38 +0300
+Processing by YandexTranslatesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mTranslate Load (0.4ms)[0m  SELECT  "translates".* FROM "translates" WHERE "translates"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered yandex_translates/show.html.slim within layouts/application (0.4ms)
+Completed 200 OK in 46ms (Views: 42.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:19:42 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[36mTranslate Load (0.2ms)[0m  [1mSELECT "translates".* FROM "translates"[0m
+  Rendered yandex_translates/index.html.slim within layouts/application (2.0ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/yandex_translates/1" for 127.0.0.1 at 2015-11-13 10:19:47 +0300
+Processing by YandexTranslatesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4dzuZy6qozEfijulm0vonZ7OEK9ZDFw1j+5GxPlkbnB9B+Ka25FtW+2koDtjRfZ+aLd2lHGV3yfqUbjNjVxWCA==", "id"=>"1"}
+  [1m[35mTranslate Load (0.2ms)[0m  SELECT  "translates".* FROM "translates" WHERE "translates"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "translates" WHERE "translates"."id" = ?  [["id", 1]]
+  [1m[36m (5.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/yandex_translates
+Completed 302 Found in 9ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:19:47 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[35mTranslate Load (0.3ms)[0m  SELECT "translates".* FROM "translates"
+  Rendered yandex_translates/index.html.slim within layouts/application (2.2ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/yandex_translates/2" for 127.0.0.1 at 2015-11-13 10:19:48 +0300
+Processing by YandexTranslatesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UP13oRAIiI/c76zzYbLUacJP/JLCQyCjiQpN9lr3HqvMJntc5TNG5S7BN22ZvMqKNDaaqerao7HstbP/Ls8m0w==", "id"=>"2"}
+  [1m[36mTranslate Load (0.1ms)[0m  [1mSELECT  "translates".* FROM "translates" WHERE "translates"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "translates" WHERE "translates"."id" = ?[0m  [["id", 2]]
+  [1m[35m (11.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/yandex_translates
+Completed 302 Found in 14ms (ActiveRecord: 11.9ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:19:48 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[36mTranslate Load (0.3ms)[0m  [1mSELECT "translates".* FROM "translates"[0m
+  Rendered yandex_translates/index.html.slim within layouts/application (4.1ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/yandex_translates/3" for 127.0.0.1 at 2015-11-13 10:19:50 +0300
+Processing by YandexTranslatesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fxDmSA0WZPZj1u1KX7ig0/AxHGtQC2xn8S8KgfzoAUDjy+q1+C2qnJH4dtSntr4wBkh6UHiS73WUkPSIiNA5OA==", "id"=>"3"}
+  [1m[35mTranslate Load (0.1ms)[0m  SELECT  "translates".* FROM "translates" WHERE "translates"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "translates" WHERE "translates"."id" = ?  [["id", 3]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/yandex_translates
+Completed 302 Found in 6ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:19:50 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[35mTranslate Load (0.2ms)[0m  SELECT "translates".* FROM "translates"
+  Rendered yandex_translates/index.html.slim within layouts/application (1.5ms)
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/yandex_translates/4" for 127.0.0.1 at 2015-11-13 10:19:52 +0300
+Processing by YandexTranslatesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aFw5rp28pUJmN+0wv3tMrswIGJbaskrNcDOF5FYzXfT0hzVTaIdrKJQZdq5HdVJNOnF+rfIryd8VjHvtIgtljA==", "id"=>"4"}
+  [1m[36mTranslate Load (0.1ms)[0m  [1mSELECT  "translates".* FROM "translates" WHERE "translates"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "translates" WHERE "translates"."id" = ?[0m  [["id", 4]]
+  [1m[35m (3.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/yandex_translates
+Completed 302 Found in 6ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:19:52 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[36mTranslate Load (0.3ms)[0m  [1mSELECT "translates".* FROM "translates"[0m
+  Rendered yandex_translates/index.html.slim within layouts/application (1.2ms)
+Completed 200 OK in 61ms (Views: 60.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/yandex_translates/new" for 127.0.0.1 at 2015-11-13 10:19:53 +0300
+Processing by YandexTranslatesController#new as HTML
+  Rendered yandex_translates/_form.html.slim (3.7ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (4.7ms)
+Completed 200 OK in 35ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:19:58 +0300
+Processing by YandexTranslatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W6S3NFn3rec4O28NBEkEZPHhWqJ1KqHbQCAR6KRK59HHf7vJrMxjjcoV9JP8RxqHB5g8mV2zIskln+/h0HLfqQ==", "yandex_translates"=>{"lang"=>"az-ru", "text"=>"Hello", "translated_text"=>""}, "commit"=>"Translate"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "translates" ("text", "translated_text", "lang", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["text", "Hello"], ["translated_text", "Привет"], ["lang", "az-ru"], ["created_at", "2015-11-13 07:20:02.539462"], ["updated_at", "2015-11-13 07:20:02.539462"]]
+  [1m[35m (9.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/yandex_translates/5
+Completed 302 Found in 3559ms (ActiveRecord: 10.4ms)
+
+
+Started GET "/yandex_translates/5" for 127.0.0.1 at 2015-11-13 10:20:02 +0300
+Processing by YandexTranslatesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mTranslate Load (0.1ms)[0m  [1mSELECT  "translates".* FROM "translates" WHERE "translates"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered yandex_translates/show.html.slim within layouts/application (0.2ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:20:04 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[35mTranslate Load (0.3ms)[0m  SELECT "translates".* FROM "translates"
+  Rendered yandex_translates/index.html.slim within layouts/application (1.3ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:20:24 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[36mTranslate Load (0.2ms)[0m  [1mSELECT "translates".* FROM "translates"[0m
+  Rendered yandex_translates/index.html.slim within layouts/application (1.3ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/yandex_translates/5/edit" for 127.0.0.1 at 2015-11-13 10:20:25 +0300
+Processing by YandexTranslatesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mTranslate Load (0.1ms)[0m  SELECT  "translates".* FROM "translates" WHERE "translates"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered yandex_translates/_form.html.slim (4.6ms)
+  Rendered yandex_translates/edit.html.slim within layouts/application (9.4ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:20:27 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[36mTranslate Load (0.2ms)[0m  [1mSELECT "translates".* FROM "translates"[0m
+  Rendered yandex_translates/index.html.slim within layouts/application (1.6ms)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/yandex_translates/5" for 127.0.0.1 at 2015-11-13 10:20:28 +0300
+Processing by YandexTranslatesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mTranslate Load (0.1ms)[0m  SELECT  "translates".* FROM "translates" WHERE "translates"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered yandex_translates/show.html.slim within layouts/application (4.3ms)
+Completed 200 OK in 36ms (Views: 34.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:20:29 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[36mTranslate Load (0.6ms)[0m  [1mSELECT "translates".* FROM "translates"[0m
+  Rendered yandex_translates/index.html.slim within layouts/application (1.4ms)
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:54:40 +0300
+
+SyntaxError (/home/mak/Desktop/Git/yandex_translate_rails/app/controllers/yandex_translates_controller.rb:95: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/yandex_translates_controller.rb:95: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (17.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (39.1ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:55:33 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[35mTranslate Load (1.5ms)[0m  SELECT "translates".* FROM "translates"
+  Rendered yandex_translates/index.html.slim within layouts/application (13.5ms)
+Completed 200 OK in 448ms (Views: 52.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-13 10:55:34 +0300
+
+
+Started GET "/assets/yandex_translates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-13 10:55:34 +0300
+
+
+Started GET "/assets/application.self-873413eee640cc8b3551e064bc2cc969e675a8c32a228276c80f49aba134cdc0.css?body=1" for 127.0.0.1 at 2015-11-13 10:55:34 +0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-13 10:55:34 +0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-13 10:55:34 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-13 10:55:34 +0300
+
+
+Started GET "/assets/yandex_translates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 10:55:34 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-13 10:55:34 +0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 10:55:34 +0300
+
+
+Started GET "/yandex_translates/new" for 127.0.0.1 at 2015-11-13 10:55:35 +0300
+Processing by YandexTranslatesController#new as HTML
+  Rendered yandex_translates/_form.html.slim (4.1ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (16.0ms)
+Completed 200 OK in 60ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:58:45 +0300
+Processing by YandexTranslatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9zLzULVjIT6bXU7CYUO1cn9BRbZe16Kk9SJDagPXVDZr6f+tQFjvVGlz1VyZTauRiTgjjXZOIbaQnb1jd+9sTg==", "yandex_translates"=>{"lang"=>"az-ru", "text"=>"", "translated_text"=>""}, "commit"=>"Detect language"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 703ms (ActiveRecord: 3.3ms)
+
+NameError (undefined local variable or method `yandex' for #<Translate:0x007fee7672a828>):
+  app/models/translate.rb:11:in `block in <class:Translate>'
+  app/controllers/yandex_translates_controller.rb:21:in `create'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (18.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (35.4ms)
+
+
+Started POST "/yandex_translates" for 127.0.0.1 at 2015-11-13 10:59:54 +0300
+Processing by YandexTranslatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9zLzULVjIT6bXU7CYUO1cn9BRbZe16Kk9SJDagPXVDZr6f+tQFjvVGlz1VyZTauRiTgjjXZOIbaQnb1jd+9sTg==", "yandex_translates"=>{"lang"=>"az-ru", "text"=>"", "translated_text"=>""}, "commit"=>"Detect language"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant Translate::Key):
+  app/models/translate.rb:2:in `<class:Translate>'
+  app/models/translate.rb:1:in `<top (required)>'
+  app/controllers/yandex_translates_controller.rb:19:in `create'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (17.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (33.4ms)
+
+
+Started POST "/yandex_translates" for 127.0.0.1 at 2015-11-13 11:00:22 +0300
+Processing by YandexTranslatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9zLzULVjIT6bXU7CYUO1cn9BRbZe16Kk9SJDagPXVDZr6f+tQFjvVGlz1VyZTauRiTgjjXZOIbaQnb1jd+9sTg==", "yandex_translates"=>{"lang"=>"az-ru", "text"=>"", "translated_text"=>""}, "commit"=>"Detect language"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered yandex_translates/_form.html.slim (7.9ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (9.4ms)
+Completed 200 OK in 954ms (Views: 58.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-13 11:00:23 +0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-13 11:00:23 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-13 11:00:23 +0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-13 11:00:23 +0300
+
+
+Started GET "/assets/yandex_translates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-13 11:00:23 +0300
+
+
+Started GET "/assets/yandex_translates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 11:00:23 +0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 11:00:23 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-13 11:00:23 +0300
+
+
+Started GET "/assets/application.self-873413eee640cc8b3551e064bc2cc969e675a8c32a228276c80f49aba134cdc0.css?body=1" for 127.0.0.1 at 2015-11-13 11:00:23 +0300
+
+
+Started POST "/yandex_translates" for 127.0.0.1 at 2015-11-13 11:00:25 +0300
+Processing by YandexTranslatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OJpBg71ewNsYAMY9o09l0V7sAfISNULUmnBuYDuAIh6kQU1+SGUOseouXaNbQXsyqJVnyTqswcb/z5BpT7gaZg==", "yandex_translates"=>{"lang"=>"az-ru", "text"=>"", "translated_text"=>""}, "commit"=>"Detect language"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered yandex_translates/_form.html.slim (15.5ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (18.3ms)
+Completed 200 OK in 856ms (Views: 63.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/yandex_translates" for 127.0.0.1 at 2015-11-13 11:00:40 +0300
+Processing by YandexTranslatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6VxZf+MmHnnLJlIZ3Gh9rRO8lpsG6qhJ5PVPlAXFFvp1h1WCFh3QEzkIyYckZmNO5cXwoC5zK1uBSrGdcf0ugg==", "yandex_translates"=>{"lang"=>"az-ru", "text"=>"", "translated_text"=>""}, "commit"=>"Translate"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered yandex_translates/_form.html.slim (3.1ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (3.9ms)
+Completed 200 OK in 471ms (Views: 36.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/yandex_translates" for 127.0.0.1 at 2015-11-13 11:00:44 +0300
+Processing by YandexTranslatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sQliwVPtTgYUd53sguDrRWVjGjnjBvk2csMQ/wbwnd8t0m48ptaAbOZZBnJ67vWmkxp8AsufeiQXfO72csilpw==", "yandex_translates"=>{"lang"=>"az-ru", "text"=>"Hello", "translated_text"=>""}, "commit"=>"Translate"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "translates" ("text", "translated_text", "lang", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["text", "Hello"], ["translated_text", "Привет"], ["lang", "az-ru"], ["created_at", "2015-11-13 08:00:45.333086"], ["updated_at", "2015-11-13 08:00:45.333086"]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/yandex_translates/6
+Completed 302 Found in 410ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/yandex_translates/6" for 127.0.0.1 at 2015-11-13 11:00:45 +0300
+Processing by YandexTranslatesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mTranslate Load (0.3ms)[0m  SELECT  "translates".* FROM "translates" WHERE "translates"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered yandex_translates/show.html.slim within layouts/application (0.4ms)
+Completed 200 OK in 71ms (Views: 68.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-11-13 11:00:47 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[36mTranslate Load (0.3ms)[0m  [1mSELECT "translates".* FROM "translates"[0m
+  Rendered yandex_translates/index.html.slim within layouts/application (1.9ms)
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/yandex_translates/new" for 127.0.0.1 at 2015-11-13 11:46:43 +0300
+Processing by YandexTranslatesController#new as HTML
+  Rendered yandex_translates/_form.html.slim (39.5ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (48.2ms)
+Completed 200 OK in 201ms (Views: 170.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/yandex_translates/5/edit" for 127.0.0.1 at 2015-11-13 11:46:49 +0300
+Processing by YandexTranslatesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mTranslate Load (5.1ms)[0m  SELECT  "translates".* FROM "translates" WHERE "translates"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered yandex_translates/_form.html.slim (5.0ms)
+  Rendered yandex_translates/edit.html.slim within layouts/application (7.8ms)
+Completed 200 OK in 69ms (Views: 57.9ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/yandex_translates/new" for 127.0.0.1 at 2015-11-13 12:12:24 +0300
+Processing by YandexTranslatesController#new as HTML
+  Rendered yandex_translates/_form.html.slim (66.0ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (68.6ms)
+Completed 200 OK in 1430ms (Views: 796.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/yandex_translates/new" for 127.0.0.1 at 2015-11-13 12:12:26 +0300
+Processing by YandexTranslatesController#new as HTML
+  Rendered yandex_translates/_form.html.slim (23.1ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (25.1ms)
+Completed 200 OK in 71ms (Views: 68.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/yandex_translates.self-4c287daa8e5cda6e6e4471c6258d6b25c13a3e64d7a776de79705325298dc5ef.js?body=1" for 127.0.0.1 at 2015-11-13 12:12:26 +0300
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-11-13 12:14:11 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[36mTranslate Load (0.7ms)[0m  [1mSELECT "translates".* FROM "translates"[0m
+  Rendered yandex_translates/index.html.slim within layouts/application (7.3ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/yandex_translates/new" for 127.0.0.1 at 2015-11-13 12:14:12 +0300
+Processing by YandexTranslatesController#new as HTML
+  Rendered yandex_translates/_form.html.slim (17.2ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (18.2ms)
+Completed 200 OK in 60ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-13 12:23:52 +0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.slim within layouts/application (1.4ms)
+Completed 200 OK in 366ms (Views: 363.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-13 12:23:53 +0300
+
+
+Started GET "/assets/yandex_translates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-13 12:23:53 +0300
+
+
+Started GET "/assets/application.self-873413eee640cc8b3551e064bc2cc969e675a8c32a228276c80f49aba134cdc0.css?body=1" for 127.0.0.1 at 2015-11-13 12:23:53 +0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-13 12:23:53 +0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-13 12:23:53 +0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-13 12:23:53 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-13 12:23:53 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-13 12:23:53 +0300
+
+
+Started GET "/assets/yandex_translates.self-4bf5b1a68a0c4f0753530ccd6510b423dc38e541adcda82e36e8d390afe94f1c.js?body=1" for 127.0.0.1 at 2015-11-13 12:23:53 +0300
+
+
+Started POST "/yandex_translates" for 127.0.0.1 at 2015-11-13 12:35:11 +0300
+Processing by YandexTranslatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t8P+n6/HgajZfuEyK8+cic/I17WFTR/ut/PsdPO0drIrGPJiWvxPwitQeqzTwYJqObGxjq3UnPzSTBJ9h4xOyg==", "yandex_translates"=>{"lang"=>"az-ru", "text"=>""}}
+  [1m[35m (0.9ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  Rendered yandex_translates/_form.html.slim (22.2ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (24.4ms)
+Completed 200 OK in 373ms (Views: 356.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/yandex_translates.self-5b16b965d358a88d9a1e4ad071cfc502f4a2b1639601277f43bde6eaf8e3b624.js?body=1" for 127.0.0.1 at 2015-11-13 12:35:11 +0300
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-11-13 12:35:26 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[35mTranslate Load (0.4ms)[0m  SELECT "translates".* FROM "translates"
+  Rendered yandex_translates/index.html.slim within layouts/application (3.1ms)
+Completed 200 OK in 91ms (Views: 89.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-11-13 12:35:26 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[36mTranslate Load (1.0ms)[0m  [1mSELECT "translates".* FROM "translates"[0m
+  Rendered yandex_translates/index.html.slim within layouts/application (5.3ms)
+Completed 200 OK in 61ms (Views: 58.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/yandex_translates/new" for 127.0.0.1 at 2015-11-13 12:35:27 +0300
+Processing by YandexTranslatesController#new as HTML
+  Rendered yandex_translates/_form.html.slim (20.1ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (22.0ms)
+Completed 200 OK in 114ms (Views: 113.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/yandex_translates" for 127.0.0.1 at 2015-11-13 12:35:28 +0300
+Processing by YandexTranslatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nAs90Slj4N9yP3eWlIM75CK9mFy2WNRuXbFwnGOQ/5MA0DEs3FgutYAR7AhsjSUH1MT+Z57BV3w4Do6VF6jH6w==", "yandex_translates"=>{"lang"=>"az-ru", "text"=>""}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered yandex_translates/_form.html.slim (6.3ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (7.7ms)
+Completed 200 OK in 139ms (Views: 75.4ms | ActiveRecord: 0.2ms)

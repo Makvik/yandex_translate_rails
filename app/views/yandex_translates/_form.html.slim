@@ -19,10 +19,10 @@
         = f.text_area :text, :value => @translate.text
       end
       br
-      = f.submit 'Detect language'
+      = button_to "Detect language", {:class=>"detect_language"}
       - if @detect_lang
         br
-        = f.label :detect_language, @detect_lang
+        = label :detect_language, @detect_lang
       end
 
     div
