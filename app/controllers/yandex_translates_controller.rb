@@ -47,7 +47,7 @@ class YandexTranslatesController < ApplicationController
 
   private
     def translate_params
-      params.require(:yandex_translates).permit(:text, :translated_text, :lang)
+      params.require(:yandex_translate).permit(:text, :translated_text, :lang)
     end
   # def render_detect_or_translate_or_save(render_type, commit, text, translated_text, lang, id = 0)
   #   # Only treatment button "Detect language"

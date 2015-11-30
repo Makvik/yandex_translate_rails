@@ -1,8 +1,8 @@
-= form_for :yandex_translates, url: url, method: method do |f|
+= form_for :yandex_translate, url: yandex_translates_path do |f|
   p
     = f.label :Translation_direction
     br
-    = f.select :lang, options_for_select(Translate::Yandex_langs, :selected => @translate.lang)
+    = f.select :lang, options_for_select(Translate::Yandex_langs, :selected => @translate.lang, remote: true)
 
   p
     div style="float: left;"
@@ -19,7 +19,7 @@
         = f.text_area :text, :value => @translate.text
       end
       br
-      = button_to "Detect language", {:class=>"detect_language"}
+      / = button_to "Detect language", {:class=>"detect_language"}
       - if @detect_lang
         br
         = label :detect_language, @detect_lang
