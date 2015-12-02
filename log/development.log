@@ -25785,3 +25785,720 @@ Processing by YandexTranslatesController#new as HTML
   Rendered yandex_translates/_form.html.slim (7.6ms)
   Rendered yandex_translates/new.html.slim within layouts/application (8.7ms)
 Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 10:13:07 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by YandexTranslatesController#index as HTML
+  [1m[35mTranslate Load (0.7ms)[0m  SELECT "translates".* FROM "translates"
+  Rendered yandex_translates/index.html.slim within layouts/application (31.8ms)
+Completed 200 OK in 6381ms (Views: 336.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 10:13:14 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[36mTranslate Load (0.3ms)[0m  [1mSELECT "translates".* FROM "translates"[0m
+  Rendered yandex_translates/index.html.slim within layouts/application (40.4ms)
+Completed 200 OK in 99ms (Views: 97.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 10:13:14 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[35mTranslate Load (0.3ms)[0m  SELECT "translates".* FROM "translates"
+  Rendered yandex_translates/index.html.slim within layouts/application (13.8ms)
+Completed 200 OK in 107ms (Views: 106.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-02 10:13:19 +0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.slim within layouts/application (21.3ms)
+Completed 200 OK in 122ms (Views: 121.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 10:13:22 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[36mTranslate Load (0.2ms)[0m  [1mSELECT "translates".* FROM "translates"[0m
+  Rendered yandex_translates/index.html.slim within layouts/application (6.1ms)
+Completed 200 OK in 70ms (Views: 68.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/yandex_translates/new" for 127.0.0.1 at 2015-12-02 10:13:25 +0300
+Processing by YandexTranslatesController#new as HTML
+  Rendered yandex_translates/_form.html.slim (97.4ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (112.8ms)
+Completed 200 OK in 154ms (Views: 151.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/yandex_translates/5" for 127.0.0.1 at 2015-12-02 10:13:28 +0300
+Processing by YandexTranslatesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mTranslate Load (0.4ms)[0m  SELECT  "translates".* FROM "translates" WHERE "translates"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered yandex_translates/show.html.slim within layouts/application (6.9ms)
+Completed 200 OK in 99ms (Views: 51.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 10:13:30 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[36mTranslate Load (0.3ms)[0m  [1mSELECT "translates".* FROM "translates"[0m
+  Rendered yandex_translates/index.html.slim within layouts/application (3.7ms)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/yandex_translates/new" for 127.0.0.1 at 2015-12-02 10:14:14 +0300
+Processing by YandexTranslatesController#new as HTML
+  Rendered yandex_translates/_form.html.slim (5.1ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (6.2ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 10:14:15 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[35mTranslate Load (0.3ms)[0m  SELECT "translates".* FROM "translates"
+  Rendered yandex_translates/index.html.slim within layouts/application (8.6ms)
+Completed 200 OK in 62ms (Views: 60.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/yandex_translates/new" for 127.0.0.1 at 2015-12-02 10:14:17 +0300
+Processing by YandexTranslatesController#new as HTML
+  Rendered yandex_translates/_form.html.slim (7.2ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (8.3ms)
+Completed 200 OK in 58ms (Views: 56.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 10:14:18 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[36mTranslate Load (0.2ms)[0m  [1mSELECT "translates".* FROM "translates"[0m
+  Rendered yandex_translates/index.html.slim within layouts/application (4.4ms)
+Completed 200 OK in 108ms (Views: 107.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/yandex_translates/5" for 127.0.0.1 at 2015-12-02 10:14:19 +0300
+Processing by YandexTranslatesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mTranslate Load (0.2ms)[0m  SELECT  "translates".* FROM "translates" WHERE "translates"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered yandex_translates/show.html.slim within layouts/application (0.2ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 10:14:28 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[36mTranslate Load (0.3ms)[0m  [1mSELECT "translates".* FROM "translates"[0m
+  Rendered yandex_translates/index.html.slim within layouts/application (5.6ms)
+Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/yandex_translates/5/edit" for 127.0.0.1 at 2015-12-02 10:14:28 +0300
+Processing by YandexTranslatesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mTranslate Load (0.1ms)[0m  SELECT  "translates".* FROM "translates" WHERE "translates"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered yandex_translates/_form.html.slim (4.9ms)
+  Rendered yandex_translates/edit.html.slim within layouts/application (16.8ms)
+Completed 200 OK in 57ms (Views: 55.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 10:14:30 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[36mTranslate Load (0.2ms)[0m  [1mSELECT "translates".* FROM "translates"[0m
+  Rendered yandex_translates/index.html.slim within layouts/application (3.4ms)
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/yandex_translates/5" for 127.0.0.1 at 2015-12-02 10:34:28 +0300
+Processing by YandexTranslatesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"x7LX14nPqTbNdM8BeEkyS51hieNCGvdKUCtF8uE8J2KBZJhEySg1e0Fxdv3fYex1FF2z1g++GHG+e3EZVqWmRg==", "id"=>"5"}
+  [1m[35mTranslate Load (1.2ms)[0m  SELECT  "translates".* FROM "translates" WHERE "translates"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  DELETE FROM "translates" WHERE "translates"."id" = ?  [["id", 5]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/yandex_translates
+Completed 302 Found in 20ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 10:34:28 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[35mTranslate Load (0.3ms)[0m  SELECT "translates".* FROM "translates"
+  Rendered yandex_translates/index.html.slim within layouts/application (4.6ms)
+Completed 200 OK in 65ms (Views: 63.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/yandex_translates/6" for 127.0.0.1 at 2015-12-02 10:34:31 +0300
+Processing by YandexTranslatesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KJkRUATfjB7eeN5XJZgY7tGTTGy/Ht6LMGvffOhCoAduT17DRDgQU1J9Z6uCsMbQWK92WfK6MbDeO+uXX9shIw==", "id"=>"6"}
+  [1m[36mTranslate Load (0.1ms)[0m  [1mSELECT  "translates".* FROM "translates" WHERE "translates"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "translates" WHERE "translates"."id" = ?[0m  [["id", 6]]
+  [1m[35m (11.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/yandex_translates
+Completed 302 Found in 21ms (ActiveRecord: 11.9ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 10:34:31 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[36mTranslate Load (0.2ms)[0m  [1mSELECT "translates".* FROM "translates"[0m
+  Rendered yandex_translates/index.html.slim within layouts/application (2.7ms)
+Completed 200 OK in 85ms (Views: 82.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/yandex_translates/new" for 127.0.0.1 at 2015-12-02 10:34:32 +0300
+Processing by YandexTranslatesController#new as HTML
+  Rendered yandex_translates/_form.html.slim (6.2ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (12.3ms)
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/yandex_translates" for 127.0.0.1 at 2015-12-02 10:34:34 +0300
+Processing by YandexTranslatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cz9QGfBc96GU1ztX4hjntenSCrhoG+q1Ksbtkp/vwtg16R+KsLtr7BjSgqtFMDmLYO4wjSW/BY7Eltl5KHZD/A==", "yandex_translate"=>{"lang"=>"az-ru", "text"=>"", "translated_text"=>""}, "commit"=>"Translate"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered yandex_translates/_form.html.slim (12.3ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (16.3ms)
+Completed 200 OK in 547ms (Views: 85.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/yandex_translates" for 127.0.0.1 at 2015-12-02 10:38:10 +0300
+Processing by YandexTranslatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jaGkxzXoVmg7+j4KAsJXesK2Fj/XX6XD+NI72eSQN/bLd+tUdQ/KJbf/h/al6olES4osCpr7SvgWgg8yUwm20g==", "yandex_translate"=>{"lang"=>"az-ru", "text"=>"H", "translated_text"=>""}, "commit"=>"Translate"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "translates" ("text", "translated_text", "lang", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["text", "H"], ["translated_text", "H"], ["lang", "az-ru"], ["created_at", "2015-12-02 07:38:10.681227"], ["updated_at", "2015-12-02 07:38:10.681227"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/yandex_translates/13
+Completed 302 Found in 369ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/yandex_translates/13" for 127.0.0.1 at 2015-12-02 10:38:10 +0300
+Processing by YandexTranslatesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mTranslate Load (0.1ms)[0m  [1mSELECT  "translates".* FROM "translates" WHERE "translates"."id" = ? LIMIT 1[0m  [["id", 13]]
+  Rendered yandex_translates/show.html.slim within layouts/application (9.0ms)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 10:38:15 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[35mTranslate Load (0.3ms)[0m  SELECT "translates".* FROM "translates"
+  Rendered yandex_translates/index.html.slim within layouts/application (3.8ms)
+Completed 200 OK in 44ms (Views: 43.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/yandex_translates/new" for 127.0.0.1 at 2015-12-02 10:38:55 +0300
+Processing by YandexTranslatesController#new as HTML
+  Rendered yandex_translates/_form.html.slim (3.5ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (4.4ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/yandex_translates" for 127.0.0.1 at 2015-12-02 11:06:01 +0300
+Processing by YandexTranslatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZaCKKzj5K68H5j46GLwU0gzLza98LCWQjt3uS1f13+AjdsW4eB634ovjh8a/lMrshff3mjGIyqtgjdqg4GxexA==", "yandex_translate"=>{"lang"=>"az-ru", "text"=>"", "translated_text"=>""}, "commit"=>"Translate"}
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  Rendered yandex_translates/_form.html.slim (76.7ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (78.1ms)
+Completed 200 OK in 487ms (Views: 131.6ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/yandex_translates" for 127.0.0.1 at 2015-12-02 11:06:05 +0300
+Processing by YandexTranslatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e/SDlbEjx8BbyvOOrUkdFzUo6YJzA7JM+PpC1DR3ZWs9IswG8cRbjdfPSnIKYcMpvBTTtz6nXXcWqnY/g+7kTw==", "yandex_translate"=>{"lang"=>"az-ru", "text"=>"", "translated_text"=>""}, "commit"=>"Translate"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered yandex_translates/_form.html.slim (9.3ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (11.1ms)
+Completed 200 OK in 432ms (Views: 60.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/yandex_translates" for 127.0.0.1 at 2015-12-02 11:06:12 +0300
+Processing by YandexTranslatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/VfLtrBy3IRGSsgljZW03H2qH57rxU+wewN8TOJV3UG7gYQl8JVAycpPcdkqvWri9JYlq6ZhoIuVU0inVcxcZQ==", "yandex_translate"=>{"lang"=>"az-ru", "text"=>"", "translated_text"=>""}, "commit"=>"Translate"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered yandex_translates/_form.html.slim (4.2ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (5.7ms)
+Completed 200 OK in 389ms (Views: 46.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 11:31:23 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[36mTranslate Load (1.2ms)[0m  [1mSELECT "translates".* FROM "translates"[0m
+  Rendered yandex_translates/index.html.slim within layouts/application (26.2ms)
+Completed 500 Internal Server Error in 440ms (ActiveRecord: 1.6ms)
+
+ActionView::Template::Error (private method `lang' called for #<Translate:0x007f5ffc4fcf28>):
+    11:   - @translates.each do |translate|
+    12:     tr
+    13:       td = translate.text
+    14:       td = translate.lang
+    15:       td = translate.translated_text
+    16:       td = link_to 'Show', yandex_translate_path(translate)
+    17:       td = link_to 'Edit', edit_yandex_translate_path(translate)
+  app/views/yandex_translates/index.html.slim:14:in `block in _app_views_yandex_translates_index_html_slim___1810148928720622537_70025116641140'
+  app/views/yandex_translates/index.html.slim:11:in `_app_views_yandex_translates_index_html_slim___1810148928720622537_70025116641140'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (39.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (25.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (52.4ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 11:31:58 +0300
+Processing by YandexTranslatesController#index as HTML
+  [1m[35mTranslate Load (0.4ms)[0m  SELECT "translates".* FROM "translates"
+  Rendered yandex_translates/index.html.slim within layouts/application (7.6ms)
+Completed 200 OK in 515ms (Views: 49.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/yandex_translates/new" for 127.0.0.1 at 2015-12-02 11:32:00 +0300
+Processing by YandexTranslatesController#new as HTML
+  Rendered yandex_translates/_form.html.slim (17.0ms)
+  Rendered yandex_translates/new.html.slim within layouts/application (18.2ms)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 14:14:45 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by YandexTranslatesController#index as HTML
+Completed 500 Internal Server Error in 528ms (ActiveRecord: 0.6ms)
+
+NameError (undefined local variable or method `split_langs' for #<Class:0x007f1833d001b8>):
+  app/models/translate.rb:6:in `<class:Translate>'
+  app/models/translate.rb:1:in `<top (required)>'
+  app/controllers/yandex_translates_controller.rb:3:in `index'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (42.8ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 14:15:08 +0300
+Processing by YandexTranslatesController#index as HTML
+Completed 500 Internal Server Error in 736ms (ActiveRecord: 0.7ms)
+
+NameError (undefined local variable or method `split_langs' for #<Class:0x007f1833ac2f68>):
+  app/models/translate.rb:6:in `<class:Translate>'
+  app/models/translate.rb:1:in `<top (required)>'
+  app/controllers/yandex_translates_controller.rb:3:in `index'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (40.0ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 14:16:20 +0300
+Processing by YandexTranslatesController#index as HTML
+Completed 500 Internal Server Error in 423ms (ActiveRecord: 0.4ms)
+
+NameError (undefined local variable or method `split_langs' for #<Class:0x007f1833911368>):
+  app/models/translate.rb:18:in `<class:Translate>'
+  app/models/translate.rb:1:in `<top (required)>'
+  app/controllers/yandex_translates_controller.rb:3:in `index'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (17.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (36.0ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 14:16:22 +0300
+Processing by YandexTranslatesController#index as HTML
+Completed 500 Internal Server Error in 451ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `split_langs' for #<Class:0x007f183393ff88>):
+  app/models/translate.rb:18:in `<class:Translate>'
+  app/models/translate.rb:1:in `<top (required)>'
+  app/controllers/yandex_translates_controller.rb:3:in `index'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (18.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (36.0ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 14:16:40 +0300
+Processing by YandexTranslatesController#index as HTML
+Completed 500 Internal Server Error in 557ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `split_langs' for #<Class:0x007f183370f178>):
+  app/models/translate.rb:6:in `<class:Translate>'
+  app/models/translate.rb:1:in `<top (required)>'
+  app/controllers/yandex_translates_controller.rb:3:in `index'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (17.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (37.9ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 14:17:04 +0300
+Processing by YandexTranslatesController#index as HTML
+Completed 500 Internal Server Error in 513ms (ActiveRecord: 0.5ms)
+
+NoMethodError (undefined method `split_langs' for #<Class:0x007f1833356428>):
+  app/models/translate.rb:6:in `<class:Translate>'
+  app/models/translate.rb:1:in `<top (required)>'
+  app/controllers/yandex_translates_controller.rb:3:in `index'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (37.3ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 14:17:13 +0300
+Processing by YandexTranslatesController#index as HTML
+Completed 500 Internal Server Error in 716ms (ActiveRecord: 0.4ms)
+
+NameError (undefined local variable or method `split_langs' for #<Class:0x007f1831e92488>):
+  app/models/translate.rb:6:in `<class:Translate>'
+  app/models/translate.rb:1:in `<top (required)>'
+  app/controllers/yandex_translates_controller.rb:3:in `index'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (37.0ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 14:17:33 +0300
+Processing by YandexTranslatesController#index as HTML
+Completed 500 Internal Server Error in 682ms (ActiveRecord: 0.4ms)
+
+NameError (undefined local variable or method `split_langs' for #<Class:0x007f18303c8238>):
+  app/models/translate.rb:29:in `<class:Translate>'
+  app/models/translate.rb:1:in `<top (required)>'
+  app/controllers/yandex_translates_controller.rb:3:in `index'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (38.3ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 14:18:01 +0300
+Processing by YandexTranslatesController#index as HTML
+Completed 500 Internal Server Error in 636ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `split_langs' for #<Class:0x007f1833fe3448>):
+  app/models/translate.rb:29:in `<class:Translate>'
+  app/models/translate.rb:1:in `<top (required)>'
+  app/controllers/yandex_translates_controller.rb:3:in `index'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (17.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (38.6ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 14:19:18 +0300
+Processing by YandexTranslatesController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/mak/Desktop/Git/yandex_translate_rails/app/models/translate.rb:27: syntax error, unexpected '=', expecting keyword_end
+    return = hash
+            ^):
+  app/models/translate.rb:27: syntax error, unexpected '=', expecting keyword_end
+  app/controllers/yandex_translates_controller.rb:3:in `index'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (37.5ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 14:19:24 +0300
+Processing by YandexTranslatesController#index as HTML
+Completed 500 Internal Server Error in 461ms (ActiveRecord: 0.7ms)
+
+NameError (undefined local variable or method `split_langs' for #<Class:0x007f18339ac5e8>):
+  app/models/translate.rb:29:in `<class:Translate>'
+  app/models/translate.rb:1:in `<top (required)>'
+  app/controllers/yandex_translates_controller.rb:3:in `index'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (38.0ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 14:19:25 +0300
+Processing by YandexTranslatesController#index as HTML
+Completed 500 Internal Server Error in 408ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `split_langs' for #<Class:0x007f1833746f10>):
+  app/models/translate.rb:29:in `<class:Translate>'
+  app/models/translate.rb:1:in `<top (required)>'
+  app/controllers/yandex_translates_controller.rb:3:in `index'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (17.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (38.7ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 14:21:41 +0300
+Processing by YandexTranslatesController#index as HTML
+Completed 500 Internal Server Error in 413ms (ActiveRecord: 0.6ms)
+
+NameError (undefined local variable or method `split_langs' for #<Class:0x007f1833ea1198>):
+  app/models/translate.rb:29:in `<class:Translate>'
+  app/models/translate.rb:1:in `<top (required)>'
+  app/controllers/yandex_translates_controller.rb:3:in `index'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (17.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (35.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-02 14:21:44 +0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.slim within layouts/application (20.3ms)
+Completed 200 OK in 314ms (Views: 313.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 14:21:46 +0300
+Processing by YandexTranslatesController#index as HTML
+Completed 500 Internal Server Error in 631ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `split_langs' for #<Class:0x007f1821347ca0>):
+  app/models/translate.rb:29:in `<class:Translate>'
+  app/models/translate.rb:1:in `<top (required)>'
+  app/controllers/yandex_translates_controller.rb:3:in `index'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (16.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (32.9ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 14:21:46 +0300
+Processing by YandexTranslatesController#index as HTML
+Completed 500 Internal Server Error in 427ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `split_langs' for #<Class:0x007f18213e61c0>):
+  app/models/translate.rb:29:in `<class:Translate>'
+  app/models/translate.rb:1:in `<top (required)>'
+  app/controllers/yandex_translates_controller.rb:3:in `index'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (43.9ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 14:22:24 +0300
+Processing by YandexTranslatesController#index as HTML
+Completed 500 Internal Server Error in 599ms (ActiveRecord: 0.6ms)
+
+NameError (undefined local variable or method `split_langs' for #<Class:0x007f1834001470>):
+  app/models/translate.rb:6:in `<class:Translate>'
+  app/models/translate.rb:1:in `<top (required)>'
+  app/controllers/yandex_translates_controller.rb:3:in `index'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (40.6ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 14:22:26 +0300
+Processing by YandexTranslatesController#index as HTML
+Completed 500 Internal Server Error in 542ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `split_langs' for #<Class:0x007f182167e108>):
+  app/models/translate.rb:6:in `<class:Translate>'
+  app/models/translate.rb:1:in `<top (required)>'
+  app/controllers/yandex_translates_controller.rb:3:in `index'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (17.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (37.8ms)
+
+
+Started GET "/yandex_translates" for 127.0.0.1 at 2015-12-02 14:22:54 +0300
+Processing by YandexTranslatesController#index as HTML
+Completed 500 Internal Server Error in 767ms (ActiveRecord: 0.5ms)
+
+NoMethodError (undefined method `split_langs' for #<Class:0x007f1821e8b648>):
+  app/models/translate.rb:6:in `<class:Translate>'
+  app/models/translate.rb:1:in `<top (required)>'
+  app/controllers/yandex_translates_controller.rb:3:in `index'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (41.3ms)
