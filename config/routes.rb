@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :yandex_translates
   root 'welcome#index'
-  get '/yandex_translates/detect_lang', to: 'yandex_translates#detect_lang', as: :detect_lang
+  post '/yandex_translates/detect_lang', to: 'yandex_translates#detect_lang', as: :detect_lang
 
 
 

@@ -2,8 +2,7 @@
   p
     = f.label :Translation_direction
     br
-    = f.select :lang, options_for_select(Translate::Yandex_langs, :selected => @translate.lang, remote: true)
-
+    = f.select :lang, options_for_select(Translate::Yandex_langs, :selected => @translate.lang)
   p
     div style="float: left;"
       = f.label :text
@@ -19,12 +18,12 @@
         = f.text_area :text, :value => @translate.text
       end
       br
-      / = button_to "Detect language", {:class=>"detect_language"}
+      = f.submit "Detect language"
+
       - if @detect_lang
         br
         = label :detect_language, @detect_lang
       end
-
     div
       = f.label :Translated_text
       - if @translate.errors[:translated_text].any?
