@@ -11,6 +11,6 @@ class Translate < ActiveRecord::Base
   validates :lang, presence: true
 
   before_validation do
-    self.translated_text = yandex.translate(text, lang).first if !translated_text.nil? && translated_text.empty?
+    self.translated_text = yandex.translate(text, lang).first if translated_text.to_s.empty?
   end
 end

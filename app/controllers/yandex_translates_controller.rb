@@ -48,7 +48,8 @@ class YandexTranslatesController < ApplicationController
 
   def detect_lang
     yandex = YandexTranslate::Client.new(Translate::Key)
-    @detect_lang = yandex.detect(params.require(:yandex_translate).permit(:text))
+    @detect_lang = yandex.detect(params.require(:yandex_translate).permit(:text)).downcase
+
     render 'edit'
   end
 
