@@ -2,7 +2,9 @@
   p
     = f.label :Translation_direction
     br
-    = f.select :lang, options_for_select(Translate::Yandex_langs, :selected => @translate.lang)
+    / = f.select :lang, options_for_select(Translate::Yandex_langs.keys, :selected => @translate.lang)
+    = f.select :lang, options_for_select(Translate::Yandex_langs.keys)
+    = f.select :lang, options_for_select(Translate::Yandex_langs['en'].map { |lang| [lang.keys[0], lang.values[0]] })
   p
     div style="float: left;"
       = f.label :text

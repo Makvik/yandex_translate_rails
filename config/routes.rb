@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :yandex_translates
   root 'welcome#index'
   post '/yandex_translates/detect_lang', to: 'yandex_translates#detect_lang', as: :detect_lang
-
+  post '/yandex_translates/update_lang', to: 'yandex_translates#update_lang', as: :update_lang
 
 
   # The priority is based upon order of creation: first created -> highest priority.
