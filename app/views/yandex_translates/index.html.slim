@@ -11,7 +11,7 @@ table
   - @translates.each do |translate|
     tr
       td = translate.text
-      td = translate.lang
+      td style="text-align: center;" = translate.lang
       td = translate.translated_text
       td = link_to 'Show', yandex_translate_path(translate)
       td = link_to 'Edit', edit_yandex_translate_path(translate)
