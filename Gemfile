@@ -1,9 +1,10 @@
 source 'https://rubygems.org'
 
-#Yandex
+# Devise
+gem 'devise'
+# Yandex
 gem 'yandex_translate', '~> 0.2.0'
-
-#Slim
+# Slim
 gem 'slim'
 
 

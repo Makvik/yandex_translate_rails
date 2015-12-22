@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :yandex_translates
   root 'welcome#index'
   post '/yandex_translates/detect_lang', to: 'yandex_translates#detect_lang', as: :detect_lang

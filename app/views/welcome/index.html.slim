@@ -1,2 +1,14 @@
 h1 Welcome to Yandex Translate
-= link_to 'Show All Traslates', yandex_translates_path
+- if user_signed_in?
+    span Hi,__
+    = current_user.email
+    br
+    br
+    = link_to 'Show All Traslates', yandex_translates_path
+    br
+    br
+    = link_to 'LogOut', destroy_user_session_path, :method => :delete
+- else
+  = link_to 'LogIn', new_user_session_path
+  или
+  = link_to 'SingUp', new_user_registration_path
