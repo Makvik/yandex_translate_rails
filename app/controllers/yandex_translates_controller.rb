@@ -1,4 +1,6 @@
 class YandexTranslatesController < ApplicationController
+  before_filter :authenticate_user!
+
   def index
     @translates = Translate.all
   end
