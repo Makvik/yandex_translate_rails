@@ -1,9 +1,9 @@
 h1 Welcome to Yandex Translate
 p
 - if user_signed_in?
-    span Hi,__
-    = current_user.email
+    = "Hi, " + current_user.email
     br
+    = "You role is " + current_user.role.to_s
     br
     = link_to 'Show All Traslates', yandex_translates_path
     br

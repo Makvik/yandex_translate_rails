@@ -16,3 +16,5 @@ table
       td = link_to 'Edit', edit_yandex_translate_path(translate)
       td = link_to 'Destroy', yandex_translate_path(translate), method: :delete, data: { confirm: 'Are you sure?' }
   end
+br
+= link_to 'LogOut', destroy_user_session_path, :method => :delete

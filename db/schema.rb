@@ -11,9 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151222132649) do
+ActiveRecord::Schema.define(version: 20151224134956) do
+
+  create_table "roles", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "translates", force: :cascade do |t|
+    t.integer  "user_id"
     t.text     "text"
     t.text     "translated_text"
     t.string   "lang"
