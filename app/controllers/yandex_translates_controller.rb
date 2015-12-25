@@ -2,11 +2,19 @@ class YandexTranslatesController < ApplicationController
   before_filter :authenticate_user!
 
   def index
-    @translates = Translate.all.where(user_id: current_user.id)
+    if current_user.role == "admin"
+      @translates = Translate.all
+    else
+      @translates = Translate.all.where(user_id: current_user.id)
+    end
   end
 
   def show
-    @translate = Translate.find_by(id: params[:id], user_id: current_user.id)
+    if current_user.role == "admin"
+      @translate = Translate.find(params[:id])
+    else
+      @translate = Translate.find_by(id: params[:id], user_id: current_user.id)
+    end
   end
 
   def new
@@ -14,11 +22,15 @@ class YandexTranslatesController < ApplicationController
   end
 
   def edit
-    @translate = Translate.find_by(id: params[:id], user_id: current_user.id)
+    if current_user.role == "admin"
+      @translate = Translate.find(params[:id])
+    else
+      @translate = Translate.find_by(id: params[:id], user_id: current_user.id)
+    end
   end
 
   def create
-    @translate = Translate.new(translate_params, user_id: current_user.id)
+    @translate = Translate.new(text: translate_params[:text], user_id: current_user.id)
 
     if @translate.save
       redirect_to :action => 'show', :id => @translate
@@ -28,9 +40,13 @@ class YandexTranslatesController < ApplicationController
   end
 
   def update
-    @translate = Translate.find_by(id: params[:id], user_id: current_user.id)
+    if current_user.role == "admin"
+      @translate = Translate.find(params[:id])
+    else
+      @translate = Translate.find_by(id: params[:id], user_id: current_user.id)
+    end
 
-    if @translate.update(translate_params)
+    if @translate.update(text: translate_params[:text])
       redirect_to :action => 'show', :id => @translate
     else
       render 'edit'
@@ -38,7 +54,12 @@ class YandexTranslatesController < ApplicationController
   end
 
   def destroy
-    @translate = Translate.find_by(id: params[:id], user_id: current_user.id)
+    if current_user.role == "admin"
+      @translate = Translate.find(params[:id])
+    else
+      @translate = Translate.find_by(id: params[:id], user_id: current_user.id)
+    end
+
     @translate.destroy
     redirect_to yandex_translates_path
   end

@@ -3,15 +3,19 @@ h1 All Translate
 br
 table
   tr
+    if current_user.role == "admin"
+      th Email
     th Text
     th Translation direction
     th Translated text
 
   - @translates.each do |translate|
     tr
-      td = translate.text
+      if current_user.role == "admin"
+        td = User.find(translate.user_id).email
+      td style="text-align: center;" = translate.text
       td style="text-align: center;" = translate.lang
-      td = translate.translated_text
+      td style="text-align: center;" = translate.translated_text
       td = link_to 'Show', yandex_translate_path(translate)
       td = link_to 'Edit', edit_yandex_translate_path(translate)
       td = link_to 'Destroy', yandex_translate_path(translate), method: :delete, data: { confirm: 'Are you sure?' }
