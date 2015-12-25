@@ -3,7 +3,7 @@ h1 All Translate
 br
 table
   tr
-    if current_user.role == "admin"
+    - if current_user.role == "admin"
       th Email
     th Text
     th Translation direction
@@ -11,7 +11,7 @@ table
 
   - @translates.each do |translate|
     tr
-      if current_user.role == "admin"
+      - if current_user.role == "admin"
         td = User.find(translate.user_id).email
       td style="text-align: center;" = translate.text
       td style="text-align: center;" = translate.lang
