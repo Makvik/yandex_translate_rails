@@ -1,5 +1,27 @@
+#                Prefix Verb   URI Pattern                           Controller#Action
+#                 users POST   /users(.:format)                      users#create
+#              new_user GET    /users/new(.:format)                  users#new
+#         user_sessions POST   /user_sessions(.:format)              user_sessions#create
+#          user_session DELETE /user_sessions/:id(.:format)          user_sessions#destroy
+#              sign_out DELETE /sign_out(.:format)                   user_sessions#destroy
+#               sign_in GET    /sign_in(.:format)                    user_sessions#new
+#     yandex_translates GET    /yandex_translates(.:format)          yandex_translates#index
+#                       POST   /yandex_translates(.:format)          yandex_translates#create
+#  new_yandex_translate GET    /yandex_translates/new(.:format)      yandex_translates#new
+# edit_yandex_translate GET    /yandex_translates/:id/edit(.:format) yandex_translates#edit
+#      yandex_translate GET    /yandex_translates/:id(.:format)      yandex_translates#show
+#                       PATCH  /yandex_translates/:id(.:format)      yandex_translates#update
+#                       PUT    /yandex_translates/:id(.:format)      yandex_translates#update
+#                       DELETE /yandex_translates/:id(.:format)      yandex_translates#destroy
+#                  root GET    /                                     welcome#index
+
+
 Rails.application.routes.draw do
-  devise_for :users
+  resources :users, only: [:new, :create]
+  resources :user_sessions, only: [:create, :destroy]
+  delete '/sign_out', to: 'user_sessions#destroy', as: :sign_out
+  get '/sign_in', to: 'user_sessions#new', as: :sign_in
+
   resources :yandex_translates
   root 'welcome#index'
 

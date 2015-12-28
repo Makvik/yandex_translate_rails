@@ -1,18 +1,18 @@
 source 'https://rubygems.org'
 
-# Devise
-gem 'devise'
+# Authlogic
+gem 'authlogic', '~> 3.4', '>= 3.4.6'
 # Yandex
 gem 'yandex_translate', '~> 0.2.0'
 # Slim
 gem 'slim'
-
-
+# Bootstrap
+gem 'bootstrap-sass'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

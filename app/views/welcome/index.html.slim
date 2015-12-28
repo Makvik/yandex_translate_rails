@@ -1,15 +1,9 @@
 h1 Welcome to Yandex Translate
-p
-- if user_signed_in?
-    = "Hi, " + current_user.email
-    br
-    = "You role is " + current_user.role.to_s
-    br
-    = link_to 'Show All Traslates', yandex_translates_path
-    br
-    br
-    = link_to 'LogOut', destroy_user_session_path, :method => :delete
-- else
-  = link_to 'LogIn', new_user_session_path
-  = " or "
-  = link_to 'SingUp', new_user_registration_path
+div class="jumbotron"
+  div class="container"
+    h1 Welcome!
+    p Sign up to get started.</p>
+    p
+      = link_to new_user_path, class: 'btn btn-primary btn-lg' do
+        Sign Up &raquo;
+
