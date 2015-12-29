@@ -1,0 +1,11 @@
+div class="container"
+  div class="col-md-3"
+    div class="page-header"
+      h1 Forgot your password?
+
+    = form_tag password_resets_path, method: :create do
+      div class="form-group"
+        = label_tag 'email', 'E-mail'
+        = email_field_tag 'email', nil, class: 'form-control'
+
+      = submit_tag 'Send reset instructions', class: 'btn btn-primary'

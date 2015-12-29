@@ -1,9 +1,14 @@
-h1 Welcome to Yandex Translate
 div class="jumbotron"
-  div class="container"
-    h1 Welcome!
-    p Sign up to get started.</p>
-    p
-      = link_to new_user_path, class: 'btn btn-primary btn-lg' do
-        Sign Up &raquo;
+  div class="container text-center"
+    h1 Welcome to Yandex Translate
+    - if current_user
+      p
+        br
+        = link_to "All Translate", yandex_translates_path, class: 'btn btn-primary btn-lg', style: "margin-right: 20px;"
+        = link_to 'New translate', new_yandex_translate_path, class: 'btn btn-primary btn-lg'
+    - else
 
+      p Sign Up to get started or Sing In.
+      p
+        = link_to "Sign Up", new_user_path, class: 'btn btn-primary btn-lg',  style: "margin-right: 20px;"
+        = link_to 'Sign In', sign_in_path, class: 'btn btn-primary btn-lg'

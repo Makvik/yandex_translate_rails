@@ -1,20 +1,11 @@
 class YandexTranslatesController < ApplicationController
-  before_filter :authenticate_user!
 
   def index
-    if current_user.role == "admin"
-      @translates = Translate.all
-    else
       @translates = Translate.all.where(user_id: current_user.id)
-    end
   end
 
   def show
-    if current_user.role == "admin"
-      @translate = Translate.find(params[:id])
-    else
       @translate = Translate.find_by(id: params[:id], user_id: current_user.id)
-    end
   end
 
   def new
@@ -22,11 +13,7 @@ class YandexTranslatesController < ApplicationController
   end
 
   def edit
-    if current_user.role == "admin"
-      @translate = Translate.find(params[:id])
-    else
       @translate = Translate.find_by(id: params[:id], user_id: current_user.id)
-    end
   end
 
   def create
@@ -40,13 +27,9 @@ class YandexTranslatesController < ApplicationController
   end
 
   def update
-    if current_user.role == "admin"
-      @translate = Translate.find(params[:id])
-    else
-      @translate = Translate.find_by(id: params[:id], user_id: current_user.id)
-    end
+    @translate = Translate.find(params[:id])
 
-    if @translate.update(text: translate_params[:text])
+    if @translate.user_id == current_user.id && @translate.update(text: translate_params[:text])
       redirect_to :action => 'show', :id => @translate
     else
       render 'edit'
@@ -54,13 +37,8 @@ class YandexTranslatesController < ApplicationController
   end
 
   def destroy
-    if current_user.role == "admin"
-      @translate = Translate.find(params[:id])
-    else
-      @translate = Translate.find_by(id: params[:id], user_id: current_user.id)
-    end
-
-    @translate.destroy
+    @translate = Translate.find(params[:id])
+    @translate.destroy if @translate.user_id == current_user.id
     redirect_to yandex_translates_path
   end
 

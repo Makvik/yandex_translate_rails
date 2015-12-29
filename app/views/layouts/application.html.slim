@@ -1,7 +1,7 @@
 doctype html
 html
 head
-  title YandexTranslateApp
+  title Yandex Translate
   = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
   = javascript_include_tag 'application', 'data-turbolinks-track' => true
   = csrf_meta_tags
@@ -10,17 +10,26 @@ body
 
   nav class="navbar navbar-inverse"
     div class="container"
+
       div class="navbar-header"
         = link_to 'Plyumbus', root_path, class: 'navbar-brand'
+
       div id="navbar"
+
         ul class="nav navbar-nav"
           li = link_to 'Home', root_path
+          - if current_user
+            li = link_to "All Translate", yandex_translates_path
+            li = link_to 'New translate', new_yandex_translate_path
+
         ul class="nav navbar-nav pull-right"
           - if current_user
               li
-                span = current_user.email
+                span
+                  = link_to current_user.email, users_path
               li = link_to 'Sign Out', sign_out_path, method: :delete
           - else
               li = link_to 'Sign In', sign_in_path
+              li = link_to 'Sign Up', new_user_path
 
   = yield

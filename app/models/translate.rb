@@ -4,11 +4,11 @@ class Translate < ActiveRecord::Base
 
   yandex = YandexTranslate::Client.new(Key)
 
+  belongs_to :user
 
   validates :text, presence: true
   validates :translated_text, presence: true
   validates :lang, presence: true
-  validates :user_id, presence: true
 
   before_validation do
     self.lang = "en-ru"

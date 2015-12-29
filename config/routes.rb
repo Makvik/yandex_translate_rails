@@ -1,8 +1,14 @@
 #                Prefix Verb   URI Pattern                           Controller#Action
-#                 users POST   /users(.:format)                      users#create
+#                 users GET    /users(.:format)                      users#index
+#                       POST   /users(.:format)                      users#create
 #              new_user GET    /users/new(.:format)                  users#new
 #         user_sessions POST   /user_sessions(.:format)              user_sessions#create
 #          user_session DELETE /user_sessions/:id(.:format)          user_sessions#destroy
+#       password_resets POST   /password_resets(.:format)            password_resets#create
+#    new_password_reset GET    /password_resets/new(.:format)        password_resets#new
+#   edit_password_reset GET    /password_resets/:id/edit(.:format)   password_resets#edit
+#        password_reset PATCH  /password_resets/:id(.:format)        password_resets#update
+#                       PUT    /password_resets/:id(.:format)        password_resets#update
 #              sign_out DELETE /sign_out(.:format)                   user_sessions#destroy
 #               sign_in GET    /sign_in(.:format)                    user_sessions#new
 #     yandex_translates GET    /yandex_translates(.:format)          yandex_translates#index
@@ -16,9 +22,11 @@
 #                  root GET    /                                     welcome#index
 
 
+
 Rails.application.routes.draw do
-  resources :users, only: [:new, :create]
+  resources :users, only: [:new, :create, :index]
   resources :user_sessions, only: [:create, :destroy]
+  resources :password_resets, only: [:new, :create, :edit, :update]
   delete '/sign_out', to: 'user_sessions#destroy', as: :sign_out
   get '/sign_in', to: 'user_sessions#new', as: :sign_in
 

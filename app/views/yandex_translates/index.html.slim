@@ -1,24 +1,32 @@
-h1 All Translate
-= link_to 'New translate', new_yandex_translate_path
-br
-table
-  tr
-    - if current_user.role == "admin"
-      th Email
-    th Text
-    th Translation direction
-    th Translated text
+div class="container"
+  div class="page-header"
+    h1 All Translate
 
-  - @translates.each do |translate|
+  = link_to 'New translate', new_yandex_translate_path, class: 'btn btn-primary btn-lg'
+  br
+  br
+
+  table class="table table-striped text-center"
     tr
-      - if current_user.role == "admin"
-        td = User.find(translate.user_id).email
-      td style="text-align: center;" = translate.text
-      td style="text-align: center;" = translate.lang
-      td style="text-align: center;" = translate.translated_text
-      td = link_to 'Show', yandex_translate_path(translate)
-      td = link_to 'Edit', edit_yandex_translate_path(translate)
-      td = link_to 'Destroy', yandex_translate_path(translate), method: :delete, data: { confirm: 'Are you sure?' }
-  end
-br
-= link_to 'LogOut', destroy_user_session_path, :method => :delete
+      / - if current_user.role == "admin"
+      /   th Email
+      th class="text-center"  Text
+      th class="text-center"  Translation direction
+      th class="text-center"  Translated text
+      th class="text-center"  Show
+      th class="text-center"  Edit
+      th class="text-center"  Destroy
+
+
+    - @translates.each do |translate|
+      tr
+        / - if current_user.role == "admin"
+        /   td = User.find(translate.user_id).email
+        td = translate.text
+        td = translate.lang
+        td = translate.translated_text
+        td = link_to 'Show', yandex_translate_path(translate)
+        td = link_to 'Edit', edit_yandex_translate_path(translate)
+        td = link_to 'Destroy', yandex_translate_path(translate), method: :delete, data: { confirm: 'Are you sure?' }
+    end
+

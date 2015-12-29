@@ -1,8 +1,8 @@
 = form_for :translate, url: url, method: method do |f|
-  p
+  p class="text-center"
     = f.label :text, 'Translated text'
     - if @translate.errors[:text].any?
-      div class="error_explanation"
+      div class="error_explanation text-center"
         ul
           - @translate.errors[:text].each do |msg|
             li = msg
@@ -11,4 +11,5 @@
       br
       = f.text_area :text, :value => @translate.text
       br
-    = f.submit :Translate
+      br
+    = f.submit :Translate, class: 'btn btn-success btn-lg'

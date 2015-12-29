@@ -1,17 +1,19 @@
-h1 Yandex Translate
-p
-  strong Text:
-  br
-  = @translate.text
+div class="container text-center"
+  div class="page-header"
+    h1 All Translate
+  p
+    strong Text:
+    br
+    = @translate.text
 
-p
-  strong Translation direction:
-  br
-  = @translate.lang
+  p
+    strong Translation direction:
+    br
+    = @translate.lang
 
-p
-  strong Translated text:
-  br
-  = @translate.translated_text
+  p
+    strong Translated text:
+    br
+    = @translate.translated_text
 
-= link_to 'Back', yandex_translates_path
+  = link_to 'Back', yandex_translates_path
